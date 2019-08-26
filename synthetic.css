@@ -6,6 +6,8 @@ body.syn, body.synth {
   background-size: cover;
   background-attachment: fixed;
   font-family: "Noto Serif SC"; }
+  body.syn button, body.synth button {
+    font-family: "Noto Serif SC"; }
 body.synth {
   margin: 0px; }
   body.synth strong, body.synth b {
