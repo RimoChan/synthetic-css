@@ -23,8 +23,12 @@ body
         h1, h2, h3, h4, h5 
             font-weight: normal
         hr
+            border: none
             border-top: 1px solid rgba(120, 50 ,0 ,0.5)
-            border-bottom: none
+        ::-moz-focus-inner
+            border: none
+        ::-moz-focus-outer
+            border: none
 
 header
     &.syn
@@ -71,6 +75,7 @@ button, a
         &:active
             box-shadow: 0px 0px $shadow_range/2 rgba(0, 0, 0, 0), 0px 0px $shadow_range/2 rgba(0, 0, 0, 0.6) inset
             filter: blur(0.1vw)
+
     &.synth
         @extend .syn
         font-size: inherit
@@ -102,8 +107,74 @@ hr
     &.syn
         width: 90%
     &.synth
-        border-top: none !important
+        border: none !important
         height: 6px
         border-radius: 40%
         background: rgba(0, 0, 0, 0.2)
     
+input[type="range"] 
+    &.syn
+        outline: none
+        -webkit-appearance: none
+        -moz-appearance: none
+        background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2), rgba(0,0,0,0.3))
+        border-radius: 5px
+        height: 5px
+        transition: all 0.2s
+        &:hover
+            transform: scaleY(2)
+            &::-webkit-slider-thumb
+                transform: scaleY(0.5)
+            &::-moz-range-thumb
+                transform: scaleY(0.5)
+                
+        &::-webkit-slider-thumb
+            transition: all 0.2s
+            cursor: pointer
+            -webkit-appearance: none
+            height: 20px
+            width: 20px
+            border-radius: 100%
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(255, 255, 255, 1) inset
+            background: rgba(255,255,200,0.5)
+        &::-moz-range-thumb
+            transition: all 0.2s
+            cursor: pointer
+            height: 20px
+            width: 20px
+            border-radius: 100%
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(255, 255, 255, 1) inset
+            background: rgba(255,255,200,0.5)
+    &.synth
+        @extend .syn
+
+input[type="checkbox"]
+    &.syn
+        -webkit-appearance: none
+        -moz-appearance: none
+        outline: none
+        cursor: pointer
+        height: 20px
+        width: 20px
+        border-radius: 100%
+        background-color: rgba(0,0,0,0.15)
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4) inset
+        transition: all 0.2s
+        
+        display: flex
+        justify-content: center
+        align-items: center
+        &::before
+            font-size: 16px
+            content: '✗'
+            color: rgba(0,0,0,0)
+            text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8)
+        &:checked
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(255, 255, 255, 1) inset
+            background: rgba(255,255,200,0.5)
+            &::before
+                content: '✓'
+                text-shadow: 0px 0px 2px rgba(255, 0, 0, 0.8)
+    &.synth
+        @extend .syn
+

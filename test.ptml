@@ -4,33 +4,36 @@ html:
     body.synth:
         header.synth:
             h1:
-                synthetic——偉翼者的CSS
+                Synthetic CSS
                 
         div style='padding:3%':
-            img.synth src='https://avatars3.githubusercontent.com/u/20064807';
+            div style='display:flex; align-items: center; ':
             
-            div.synth style='height: 300px; width: 300px;':
-                p:
-                    你好！
-                    br;
-                    b:
-                        以及粗的你好！
-                hr;
-                p style='font-size:200%':
-                    大的你好！
-                    br;
-                    b:
-                        又大又粗的你好！
-                        
+                img.synth src='https://avatars3.githubusercontent.com/u/20064807';
+                
+                div.synth style='width: 300px;':
+                    p:
+                        你好！
+                        br;
+                        b:
+                            以及粗的你好！
+                    hr;
+                    p style='font-size:200%':
+                        大的你好！
+                        br;
+                        b:
+                            又大又粗的你好！
+                            
             hr.synth;
-            
-            button.synth:
-                我是按鈕
+            div style='display:flex; align-items: center; ':
+                input.syn type="range";
+                input.syn type="checkbox";
+                button.synth:
+                    按鈕
                 
             blockquote.synth:
                 你、你這傢伙！！！ 爲什麼在摸我的胸啊！！！
                 br;
                 &nbsp;&nbsp;&nbsp;&nbsp;——牛頓
-            
-            
+
         

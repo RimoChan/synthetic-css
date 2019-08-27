@@ -1,6 +1,6 @@
 # Synthetic
 
-以Synthetic爲主題的美化向CSS。
+以Synthetic爲主題的，純粹的美化向CSS。
 
 只需要兩個類 `.syn` 和 `.synth` ，把它們用在不同的標籤上就會有不同的效果。
 
@@ -12,11 +12,11 @@
 
 `.syn`類會給標籤附上Synthetic風格的基本效果，基本上不會影響原本的佈局，只有紋理、陰影等變化。
 
-`.synth`將附加所有效果，可能導致佈局變化。
+`.synth`將附加所有效果，可能導致佈局變化。繼承自 `.syn` ，不需要和 `.syn` 同時使用。
 
 ## 支持的標籤和效果
 
-body
+`body`
 + syn
     - 添加背景
     - 更換全局字體
@@ -24,19 +24,19 @@ body
     - 去除margin
     - 變更內部的strong, b, h1, h2, h3, h4, h5, hr的風格
     
-header
+`header`
 + syn
     - 添加背景和陰影
 + synth
     - 變更爲flex佈局並把元素居中
 
-div
+`div`
 + syn
     - 添加背景和陰影
 + synth
     - 添加圓角和內外邊距
 
-button, a
+`button`, `a`
 + syn
     - 去除原本的樣式
     - 添加背景和陰影
@@ -45,26 +45,56 @@ button, a
     - 添加圓角和內外邊距
     - 繼承字號
 
-blockquote
+`blockquote`
 + syn
     - 設定顏色
     - 左側添加豎線
 + synth
     - 設定左側邊距
 
-img 
+`img`
 + syn
     - 添加圓角
     - 添加陰影
 + synth
     - 添加邊距
 
-hr
+`hr`
 + 在body的synth下
-    + 改變顏色
+    - 改變顏色
 + syn
-    + 90%大小
+    - 90%大小
 + synth
-    + 改變顏色
-    + 添加厚度
-    + 流線形
+    - 不再是90%大小
+    - 改變顏色
+    - 添加厚度
+    - 流線形
+
+`input[type="range"]`
++ syn
+    - 去除原本的樣式
+    - 設定形狀和大小
+    - 爲軸添加凹陷效果
+    - 爲按鈕添加半透明效果
+    - 懸停時放大
+
+`input[type="checkbox"]`
++ syn
+    - 去除原本的樣式
+    - 設定形狀和大小
+    - 添加半透明效果
+    - 嵌入✓✗文字
+
+## 瀏覽器支持
+
+Chrome: 所有效果
+
+Firefox: 所有效果
+
+Edge: (已經換chromium內核了所以和chrome應該是一樣的)
+
+IE: 失去按鈕的濾鏡效果，滑動條不能正常顯示
+
+## 注意
+
+Synthetic使用了太多的特效，可能導致某些貧窮的機器卡住。
