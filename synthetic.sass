@@ -11,7 +11,7 @@ body
     &.syn
         +bg('紙背景花紋.jpg')
         font-family: 'Noto Serif SC'
-        button
+        *
             font-family: 'Noto Serif SC'
             
     &.synth
@@ -177,4 +177,31 @@ input[type="checkbox"]
                 text-shadow: 0px 0px 2px rgba(255, 0, 0, 0.8)
     &.synth
         @extend .syn
+            
+input[type="text"], input[type="password"]
+    &.syn
+        background: rgba(0,0,0,0)
+        outline: none
+        border: solid 1px rgba(0,0,0,0.3)
+        border-radius: 2px 
+        padding: 2px
+            
+    &.synth
+        @extend .syn
+        border: none
+        border-radius: 0px 
+        border-bottom: solid 1px rgba(55,55,0,0.6)
+        border-top: solid 1px rgba(0,0,0,0)
+        text-align: center
+        &:hover
+            padding: 0px 2px
+            border-top: solid 3px rgba(0,0,0,0)
+            border-bottom: solid 3px rgba(55,55,0,0.4)
 
+textarea 
+    &.syn
+        background: rgba(0,0,0,0)
+        outline: none
+        border: solid 1px rgba(0,0,0,0.3)
+        border-radius: 2px 
+    

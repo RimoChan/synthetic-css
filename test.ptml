@@ -25,11 +25,19 @@ html:
                             又大又粗的你好！
                             
             hr.synth;
-            div style='display:flex; align-items: center; ':
-                input.syn type="range";
-                input.syn type="checkbox";
-                button.synth:
-                    按鈕
+            button.synth:
+                按鈕
+            
+            div style='display:flex; align-items: center; justify-content: space-around;':
+                input.synth type="range";
+                input.synth type="checkbox";
+                input.synth type="text" placeholder='輸入';
+            div.synth style='display:flex; align-items: center; justify-content: space-around;':
+                input.synth type="range";
+                input.synth type="checkbox";
+                input.synth type="text" placeholder='輸入';
+            
+            textarea.syn:
                 
             blockquote.synth:
                 你、你這傢伙！！！ 爲什麼在摸我的胸啊！！！

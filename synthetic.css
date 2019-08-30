@@ -6,7 +6,7 @@ body.syn, body.synth {
   background-size: cover;
   background-attachment: fixed;
   font-family: "Noto Serif SC"; }
-  body.syn button, body.synth button {
+  body.syn *, body.synth * {
     font-family: "Noto Serif SC"; }
 body.synth {
   margin: 0px; }
@@ -146,5 +146,28 @@ input[type="checkbox"].syn, input[type="checkbox"].synth {
     input[type="checkbox"].syn:checked::before, input[type="checkbox"].synth:checked::before {
       content: "✓";
       text-shadow: 0px 0px 2px rgba(255, 0, 0, 0.8); }
+
+input[type="text"].syn, input[type="text"].synth, input[type="password"].syn, input[type="password"].synth {
+  background: rgba(0, 0, 0, 0);
+  outline: none;
+  border: solid 1px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  padding: 2px; }
+input[type="text"].synth, input[type="password"].synth {
+  border: none;
+  border-radius: 0px;
+  border-bottom: solid 1px rgba(55, 55, 0, 0.6);
+  border-top: solid 1px rgba(0, 0, 0, 0);
+  text-align: center; }
+  input[type="text"].synth:hover, input[type="password"].synth:hover {
+    padding: 0px 2px;
+    border-top: solid 3px rgba(0, 0, 0, 0);
+    border-bottom: solid 3px rgba(55, 55, 0, 0.4); }
+
+textarea.syn {
+  background: rgba(0, 0, 0, 0);
+  outline: none;
+  border: solid 1px rgba(0, 0, 0, 0.3);
+  border-radius: 2px; }
 
 /*# sourceMappingURL=synthetic.css.map */
