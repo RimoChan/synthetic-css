@@ -6,7 +6,7 @@ body.syn, body.synth {
   background-size: cover;
   background-attachment: fixed;
   font-family: "Noto Serif SC"; }
-  body.syn *, body.synth * {
+  body.syn button, body.synth button, body.syn input, body.synth input, body.syn textarea, body.synth textarea {
     font-family: "Noto Serif SC"; }
 body.synth {
   margin: 0px; }
