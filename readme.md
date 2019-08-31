@@ -8,11 +8,19 @@
 
 ![樣例.jpg](樣例.jpg)
 
-## 使用
+## 使用方法
 
-`.syn`類會給標籤附上Synthetic風格的基本效果，基本上不會影響原本的佈局，只有紋理、陰影等變化。
+直接從github page引用<sub>(網路質量取決於地區)</sub>——
 
-`.synth`將附加所有效果，可能導致佈局變化。繼承自 `.syn` ，不需要和 `.syn` 同時使用。
+```html
+<link rel="stylesheet" href="https://rimochan.github.io/synthetic-css/synthetic.css">
+```
+
+或者把這個倉庫clone回去再引用。
+
+`.syn`類會給標籤附上Synthetic風格的基本效果，基本不會影響原本的佈局，只有紋理、陰影等變化。
+
+`.synth`將附加所有效果，可能導致佈局變化。繼承自`.syn`，即不需要和`.syn`同時使用。
 
 ## 支持的標籤和效果
 
