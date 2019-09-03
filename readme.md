@@ -16,7 +16,11 @@
 <link rel="stylesheet" href="https://rimochan.github.io/synthetic-css/synthetic.css">
 ```
 
-或者把這個倉庫clone回去再引用。
+或者把這個倉庫clone回去再鏈接`synthetic.css`。
+
+如果你打算把這個css用於本地的html應用，建議鏈接`synthetic_offline.css`。它取消了對google字型api的引用，以保證在有無網路時效果一致。
+
+## 類
 
 `.syn`類會給標籤附上Synthetic風格的基本效果，基本不會影響原本的佈局，只有紋理、陰影等變化。
 
