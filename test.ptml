@@ -1,5 +1,6 @@
 html:
     head:
+        meta charste="utf-8"; 
         link type="text/css" rel="stylesheet" href="./synthetic.css";
     body.synth:
         header.synth:
@@ -32,16 +33,19 @@ html:
                 input.synth type="range";
                 input.synth type="checkbox";
                 input.synth type="text" placeholder='輸入';
-            div.synth style='display:flex; align-items: center; justify-content: space-around;':
-                input.synth type="range";
-                input.synth type="checkbox";
-                input.synth type="text" placeholder='輸入';
-            
-            textarea.syn:
+            progress.synth value="56" max="100":
+            br;
+            div.synth:
+                div style='display:flex; align-items: center; justify-content: space-around;':
+                    input.synth type="range";
+                    input.synth type="checkbox";
+                    input.synth type="text" placeholder='輸入';
+                progress.synth value="44" max="100":
                 
             blockquote.synth:
                 你、你這傢伙！！！ 爲什麼在摸我的胸啊！！！
                 br;
                 &nbsp;&nbsp;&nbsp;&nbsp;——牛頓
+            textarea.syn:
 
         

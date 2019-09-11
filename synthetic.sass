@@ -67,11 +67,12 @@ button, a
         +bg('./紙背景花紋模糊.jpg')
             
         box-shadow: 0px 0px $shadow_range rgba(0, 0, 0, 0.6), 0px 0px $shadow_range/2 rgba(0, 0, 0, 0) inset
-        filter: hue-rotate(-12deg)
+        filter: brightness(1.05) hue-rotate(-6deg)
         
         transition: box-shadow 0.2s, filter 0.1s
         &:hover
             box-shadow: 0px 0px $shadow_range/2 rgba(0, 0, 0, 0.7), 0px 0px $shadow_range/2 rgba(0, 0, 0, 0) inset
+            filter: brightness(1.1) hue-rotate(-12deg)
         &:active
             box-shadow: 0px 0px $shadow_range/2 rgba(0, 0, 0, 0), 0px 0px $shadow_range/2 rgba(0, 0, 0, 0.6) inset
             filter: blur(0.1vw)
@@ -123,6 +124,7 @@ input[type="range"]
         transition: all 0.2s
         &:hover
             transform: scaleY(2)
+            // 其實乘好不總是1我也不知道怎麼辦……
             &::-webkit-slider-thumb
                 transform: scaleY(0.5)
             &::-moz-range-thumb
@@ -205,3 +207,40 @@ textarea
         border: solid 1px rgba(0,0,0,0.3)
         border-radius: 2px 
     
+progress
+    &.syn
+        -webkit-appearance: none
+        -moz-appearence: none
+        appearance: none
+        background: transparent
+        border: 1px solid rgba(0, 0, 0, 0.15)
+        border-radius: 3px
+        box-shadow: 0px 0px 8px rgba(0,0,0,0.3) inset
+        background: rgba(0,0,0,0.2)
+        &::-webkit-progress-bar
+            background: transparent
+        &::-webkit-progress-value
+            background: transparent
+            border-radius: 3px
+            border-right: 1px solid rgba(0, 0, 0, 0.3)
+            backdrop-filter: saturate(0.8) contrast(1.8) brightness(1.3)
+        
+        &::-moz-progress-bar
+            +bg('紙背景花紋模糊.jpg')
+            border-radius: 3px
+            filter: brightness(0.8) saturate(0.8) contrast(1.8) brightness(1.3)
+            
+    &.synth
+        @extend .syn
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 24px
+        margin: 4px
+        &::after
+            content: attr(value)"/"attr(max)
+            position: absolute
+            opacity: 0.75
+            text-shadow: 0px 0px 3px rgba(0, 0, 0, 1)
+            color: #ffd
+            
