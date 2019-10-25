@@ -10,10 +10,11 @@
 
 ## 使用方法
 
-直接從github page引用<sub>(網路質量取決於地區)</sub>——
+從librian.it引用就好了。  
+因爲用了CDN所以很快。
 
 ```html
-<link rel="stylesheet" href="https://rimochan.github.io/synthetic-css/synthetic.css">
+<link rel="stylesheet" href="https://synthetic.librian.it/synthetic.css">
 ```
 
 或者把這個倉庫clone回去再鏈接`synthetic.css`。
