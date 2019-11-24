@@ -11,7 +11,8 @@ html:
             div style='display:flex; align-items: center; ':
             
                 img.synth src='https://avatars3.githubusercontent.com/u/20064807';
-                
+                div.synth.t style='width: 300px; height: 300px':
+                    <p>喵</p><p>喵</p><p>喵</p><p>喵</p><p>喵</p><p>喵</p><p>喵</p><p>喵</p><p>喵</p><p>喵</p><p>喵</p><p>喵</p>
                 div.synth style='width: 300px;':
                     p:
                         你好！

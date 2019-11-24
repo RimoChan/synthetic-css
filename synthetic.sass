@@ -41,7 +41,6 @@ header
         justify-content: center
         align-items: center
     
-    
 div
     &.syn
         +bg('紙背景花紋模糊.jpg')
@@ -51,7 +50,17 @@ div
         margin: 0.5vw
         padding: 0.5vw
         border-radius: 0.5vw
-        
+        overflow-y: auto
+        &::-webkit-scrollbar 
+            cursor: pointer
+            width: 20px
+            background-image: -webkit-linear-gradient(0deg, transparent 40%, rgba(0,0,0,0.2)40%,rgba(0,0,0,0.2)60%,transparent 60%, transparent)
+            border-radius: 16px
+        &::-webkit-scrollbar-thumb
+            border-radius: 0.5vw
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35), 0px 0px 10px rgba(255, 255, 255, 1) inset
+            background: rgba(255,255,200,0.65)
+            backdrop-filter: blur(4px)
         
 button, a
     &.syn
