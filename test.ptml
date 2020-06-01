@@ -33,16 +33,19 @@ html:
             div style='display:flex; align-items: center; justify-content: space-around;':
                 input.synth type="range";
                 input.synth type="checkbox";
-                input.synth type="text" placeholder='輸入';
             progress.synth value="56" max="100":
             br;
             div.synth:
                 div style='display:flex; align-items: center; justify-content: space-around;':
                     input.synth type="range";
                     input.synth type="checkbox";
-                    input.synth type="text" placeholder='輸入';
                 progress.synth value="44" max="100":
                 
+            p:
+                input.synth type="number" placeholder='input type="number"';
+            p:
+                input.synth type="text" placeholder='input type="text"';
+            
             blockquote.synth:
                 你、你這傢伙！！！ 爲什麼在摸我的胸啊！！！
                 br;
