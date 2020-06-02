@@ -53,6 +53,19 @@ div.synth {
     background: rgba(255, 255, 200, 0.65);
     backdrop-filter: blur(4px); }
 
+table.syn, table.synth {
+  border-radius: 2px;
+  border-collapse: collapse;
+  border-style: hidden;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5); }
+  table.syn th, table.synth th {
+    background-color: rgba(0, 0, 0, 0.08); }
+  table.syn td, table.synth td, table.syn th, table.synth th {
+    padding: 0.2em 1em;
+    text-align: center;
+    vertical-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.5); }
+
 button.syn, button.synth, a.syn, a.synth {
   outline: none;
   border: none;

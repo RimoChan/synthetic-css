@@ -49,6 +49,13 @@
 + synth
     - 添加圓角和內外邊距
 
+`table`
++ syn
+    - 添加邊框和一點點圓角
+    - 表頭添加背景顏色
+    - 文本居中
+    - 添加邊距
+
 `button`, `a`
 + syn
     - 去除原本的樣式
@@ -98,7 +105,7 @@
     - 添加半透明效果
     - 嵌入✓✗文字
 
-`input[type="text"]`, `input[type="password"]`
+`input[type="text"]`, `input[type="password"]`, `input[type="number"]`
 + syn
     - 去除原本的樣式
     - 設定形狀和顏色
