@@ -29,7 +29,8 @@ html:
             hr.synth;
             button.synth:
                 按鈕
-            
+            button.synth disabled:
+                按鈕
             div style='display:flex; align-items: center; justify-content: space-around;':
                 input.synth type="range";
                 input.synth type="checkbox";
